@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-export const PrimaryHeader = ({ bgColor = 'bg-sky-950', name = "JimmyFallon.AI", buttonLabel1 = 'About', buttonLabel2 = 'Contact', onClick }) => {
+export const PrimaryHeader = ({ bgColor = 'bg-sky-950', name = "JimmyFallon.AI", buttonLabel1 = 'About', buttonLabel2 = 'Contact' }) => {
   const color = 'text-white'
   return (
     <div className={`${bgColor} bg-sky-950 px-20 h-20 items-center flex`}>
@@ -9,7 +9,7 @@ export const PrimaryHeader = ({ bgColor = 'bg-sky-950', name = "JimmyFallon.AI",
       </p>
 
       <div className="flex-row">
-        <button onClick={onClick} className={`${color} ml-10 text-xl `}>
+        <button  className={`${color} ml-10 text-xl `}>
           {buttonLabel1}
         </button>
         <button className={`${color} ml-10 text-xl`}>
