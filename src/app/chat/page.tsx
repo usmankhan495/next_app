@@ -1,7 +1,6 @@
 'use client';
 import { useState } from 'react';
 
-import { ChatCard } from '@/components';
 
 const ChatPage = () => {
   // eslint-disable-next-line no-console
@@ -26,21 +25,21 @@ const ChatPage = () => {
       <div className='w-96 max-w-6xl'>
         {/* Chat window */}
         <div className='mb-4 rounded-lg bg-white p-4 shadow-md'>
-          {messages.map((message) => (
-            <ChatCard
-              key={message.id}
-              userName={message.userName}
-              // eslint-disable-next-line @next/next/no-img-element
-              userIcon={
-                <img
-                  src='user-icon.png'
-                  alt='User Icon'
-                  className='h-full w-full object-cover'
-                />
-              }
-              message={message.message}
-            />
-          ))}
+          {/* {messages.map((message) => (
+            // <ChatCard
+            //   key={message.id}
+            //   // userName={message.userName}
+            //   // eslint-disable-next-line @next/next/no-img-element
+            //   // userIcon={
+            //   //   <img
+            //   //     src='user-icon.png'
+            //   //     alt='User Icon'
+            //   //     className='h-full w-full object-cover'
+            //   //   />
+            //   }
+            //   // message={message.message}
+            // />
+          ))} */}
         </div>
 
         {/* Input field for sending new messages */}
