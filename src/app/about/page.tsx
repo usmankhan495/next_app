@@ -1,11 +1,8 @@
 // "use client"
 
-
-import { headers} from 'next/headers'
-
 // import { useRouter} from 'next/navigation'
 // import { useSearchParams } from 'next/navigation';
-import { AboutJimmy } from "@/components/layouts/jimmy/about";
+import { AboutJimmy } from '@/components/layouts/jimmy/about';
 
 // export async function generateMetadata({
 //   params,
@@ -38,18 +35,17 @@ import { AboutJimmy } from "@/components/layouts/jimmy/about";
 // }
 
 export default function About() {
-
   // const router = useRouter();
   // const searchParams = useSearchParams()
-  const headersList=headers();
-  const domain=headersList.get('tenant'); // to get domain
-  headersList.get('next-url');
+  // const headersList=headers();
+  // const domain=headersList.get('tenant'); // to get domain
+  // headersList.get('next-url');
 
-  console.log('useRouter: ',domain);
+  // console.log('useRouter: ',domain);
   // const { tenant: resolvedTenant } = router;
   return (
     <div>
       <AboutJimmy />
     </div>
-  )
+  );
 }

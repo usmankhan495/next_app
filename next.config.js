@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const tenantMiddleware = require('./src/lib/middleware/tenantMiddleware.ts');
+// const tenantMiddleware = require('./src/lib/middleware/tenantMiddleware.ts');
 const nextConfig = {
-  
   eslint: {
     dirs: ['src'],
   },
