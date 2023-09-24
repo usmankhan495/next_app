@@ -1,5 +1,9 @@
 /** @type {import('next').NextConfig} */
+
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const tenantMiddleware = require('./src/lib/middleware/tenantMiddleware.ts');
 const nextConfig = {
+  
   eslint: {
     dirs: ['src'],
   },
@@ -13,6 +17,7 @@ const nextConfig = {
   //     'res.cloudinary.com',
   //   ],
   // },
+  pageExtensions: ['ts', 'tsx'],
 
   webpack(config) {
     // Grab the existing rule that handles SVG imports
@@ -45,6 +50,22 @@ const nextConfig = {
 
     return config;
   },
+  // async headers() {
+  //   return [
+  //     {
+  //       source: '/(.*)',
+  //       headers: [
+  //         {
+  //           key: 'X-Tenant',
+  //           value: 'default', // Default tenant if none is detected
+  //         },
+  //       ],
+  //     },
+  //   ];
+  // },
+  // middleware: (req, res) => {
+  //   tenantMiddleware(req, res);
+  // },
 };
 
 module.exports = nextConfig;

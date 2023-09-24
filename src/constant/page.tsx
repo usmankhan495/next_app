@@ -1,4 +1,3 @@
-'use client';
 
 import Head from 'next/head';
 import * as React from 'react';
@@ -22,6 +21,7 @@ import Logo from '~/svg/Logo.svg';
 // to customize the default configuration.
 
 export default function HomePage() {
+  // console.log('repo: ',repo);
   return (
     <main>
       <Head>
