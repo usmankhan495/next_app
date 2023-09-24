@@ -1,24 +1,23 @@
 'use client';
-import { useState } from 'react';
 
 
 const ChatPage = () => {
   // eslint-disable-next-line no-console
   // console.log('params: ',params);
-  const [messages, _] = useState([
-    { id: 1, userName: 'John Doe', message: 'Hello! How can I help you?' },
-    {
-      id: 2,
-      userName: 'John Doe',
-      message: 'Sure, I can assist you with that.',
-    },
-    {
-      id: 3,
-      userName: 'John Doe',
-      message: 'Please let me know your question.',
-    },
-    // Add more messages here as needed
-  ]);
+  // const [messages, _] = useState([
+  //   { id: 1, userName: 'John Doe', message: 'Hello! How can I help you?' },
+  //   {
+  //     id: 2,
+  //     userName: 'John Doe',
+  //     message: 'Sure, I can assist you with that.',
+  //   },
+  //   {
+  //     id: 3,
+  //     userName: 'John Doe',
+  //     message: 'Please let me know your question.',
+  //   },
+  //   // Add more messages here as needed
+  // ]);
 
   return (
     <div className='flex min-h-screen justify-center bg-gray-100 '>
