@@ -1,11 +1,16 @@
-const TestPage = ({ params }: { params: { domain: string } }) => {
-  // eslint-disable-next-line no-console
-  console.log('params: ', params);
+import { layouts } from '@/constant/layouts';
+
+const HomePage = async ({ params }: { params: { domain: string } }) => {
+  const tenant = 'jimmy';
+
+  const Home = layouts.home[tenant];
+
   return (
     <div>
-      <h1>Test Page {params.domain}</h1>
+      <p>Test Page {params.domain}</p>
+      <Home />
     </div>
   );
 };
 
-export default TestPage;
+export default HomePage;
