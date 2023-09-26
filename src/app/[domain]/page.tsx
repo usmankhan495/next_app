@@ -25,7 +25,7 @@ export default async function HomePage({ params }: { params: { domain: string } 
 
   return (
     <div>
-      <p>Test Page {params.domain} {JSON.stringify(data)}</p>
+      <p>Test Page version 1.1 {params.domain} {JSON.stringify(data)}</p>
       <Home />
     </div>
   );

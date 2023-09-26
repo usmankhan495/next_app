@@ -15,6 +15,9 @@ export const layouts = {
     bethany: AboutBethany,
   },
   default:{
-    
+
   }
 };
+
+
+// const res = await fetch(`https://blazorstagingapi.azurewebsites.net/api/Config?URL=${domain}`)
