@@ -14,4 +14,7 @@ export const layouts = {
     jimmy: AboutPageJimmy,
     bethany: AboutBethany,
   },
+  default:{
+    
+  }
 };
