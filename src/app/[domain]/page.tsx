@@ -1,18 +1,19 @@
 import { layouts } from '@/constant/layouts';
 
 async function getData(domain:string) {
-  const res = await fetch(`https://blazorstagingapi.azurewebsites.net/api/Config?URL=${domain}/`)
+  console.log('getData',  domain)
+  const res = await fetch(`https://blazorstagingapi.azurewebsites.net/api/Config?URL=https://next-app-two-ruddy.vercel.app/`)
  
   if (!res.ok) {
-    // This will activate the closest `error.js` Error Boundary
-    throw new Error('Failed to fetch data')
-  }
+  //  This will activate the closest `error.js` Error Boundary
+  return {}
+ }
  
-  return res.json()
+  return res.json();
 }
  
 
-const HomePage = async ({ params }: { params: { domain: string } }) => {
+export default async function HomePage({ params }: { params: { domain: string } }) {
   // BE
   const tenant = 'jimmy';
 
@@ -24,12 +25,10 @@ const HomePage = async ({ params }: { params: { domain: string } }) => {
 
   return (
     <div>
-      <p>Test Page {params.domain} {JSON.stringify(data)}</p>
+      <p>Test Page {params.domain} </p>
       <Home />
     </div>
   );
 };
 
 
-
-export default HomePage;
