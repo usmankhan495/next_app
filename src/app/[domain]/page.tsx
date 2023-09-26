@@ -3,8 +3,7 @@ import { layouts } from '@/constant/layouts';
 async function getData(domain:string) {
   // eslint-disable-next-line no-console
   console.log('getData',  domain)
-  const res = await fetch(`https://blazorstagingapi.azurewebsites.net/api/Config?URL=https://next-app-two-ruddy.vercel.app/`)
- 
+  const res = await fetch(`https://blazorstagingapi.azurewebsites.net/api/Config?URL=${domain}`) 
   if (!res.ok) {
   //  This will activate the closest `error.js` Error Boundary
   return {}
